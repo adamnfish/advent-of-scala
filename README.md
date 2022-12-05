@@ -1,7 +1,7 @@
 Advent of Scala (2022)
 ======================
 
-A helper template for solving advent of code (2022) using Scala.
+A helper template for solving [Advent of Code](https://adventofcode.com/) (2022) using Scala.
 
 ## Solving the challenges
 
