@@ -6,11 +6,14 @@ import org.scalatest.matchers.should.Matchers
 
 
 class Day01Test extends AnyFreeSpec with Matchers {
-  // tests are can be grouped into blocks using the - operator, with a description
-  // test blocks follow their description and the in operator
+  // This test class uses FreeSpec, which gives you a lot of flexibility for laying out your tests.
+  // Tests are can be grouped into blocks using the - operator, with a description.
+  // Test blocks follow their description and the in operator.
+  // Here's a summary of the style (alternatives exist!):
+  //   https://www.scalatest.org/at_a_glance/FreeSpec
   // assertions are done using scalatest's rich matching functionality:
   //   https://www.scalatest.org/user_guide/using_matchers
-  // e.g. shouldEqual
+  // e.g. `1 shouldEqual 1`
 
   "part 1" - {
     "solution gives the correct answer for the test input" in {

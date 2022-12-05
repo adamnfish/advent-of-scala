@@ -35,7 +35,7 @@ The [Day01](src/main/scala/advent2022/challenges/Day01.scala) file is already se
 
 #### Include your puzzle input
 
-Get your puzzle input from Advent of Code and include it as a file in the [puzzle-inputs](src/main/resources/puzzle-inputs) resources directory called `dayNN.txt`, where `NN` corresponds to the day number (e.g. `01`, `14`).
+Get your puzzle input from Advent of Code and include it as a file in the [puzzle-inputs](src/main/resources/puzzle-inputs) resources directory called `dayNN.txt`, where `NN` corresponds to the day number (e.g. `day01.txt`, `day14.txt`).
 
 #### Add your solution to the advent of code program
 
@@ -63,6 +63,8 @@ Generate your solution for day 1, part 2 (or the day and part of your choice).
 
 You can lay this out however you want, but there's a stubbed suggestion for day 1.
 
+This is the `src` directory, where all your code will go.
+
 ```
 src
 ├── main
@@ -89,6 +91,10 @@ This layout puts the puzzle inputs into the resources directory so that they kep
 The code itself is in the scala directory, laid out with a package for the solutions (`challenges`) that contains an Object for each day (e.g. `Day01`).
 
 The Advent of Code object handles the CLI program, and will load your puzzle input and run your solution.
+
+You can include tests for you solutions in the test source tree. A helper for loading test resource inputs is included in [TestHelpers](src/test/scala/advent2022/TestHelpers.scala).
+
+If you want to include any other library dependencies the [build.sbt](build.sbt) file includes a `libraryDependencies` configuration, which you can add to as needed.
 
 ## Testing your solution
 
@@ -118,4 +124,3 @@ This example uses FreeSpec, which allows you to group tests arbitrarily into blo
 
 The following link is an overview of the different testing styles supported by Scalatest. Choose the one you like best!
 https://www.scalatest.org/at_a_glance/FreeSpec
-

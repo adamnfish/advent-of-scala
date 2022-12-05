@@ -15,7 +15,7 @@ object AdventOfCode {
         // ADD OTHER DAYS AND PARTS HERE AS NEEDED
 
         case _ =>
-          println("Provide a valid day and part to run the program e.g. `run 1 2`")
+          println("Provide a valid day and part to run the program e.g. `run 1 2`, in general `run <day> <part>`")
       }
     println(s"Answer = $result")
   }
